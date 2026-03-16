@@ -4,6 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>小林家の春休み2026</title>
+  <!-- iPhoneホーム画面アイコン -->
+  <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%23ffd4e5'/%3E%3Cstop offset='52%25' stop-color='%23ffe9f2'/%3E%3Cstop offset='52%25' stop-color='%2389d7f7'/%3E%3Cstop offset='100%25' stop-color='%2357b7e8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='180' height='180' rx='40' fill='url(%23bg)'/%3E%3Ccircle cx='34' cy='34' r='13' fill='%23ff8fb1'/%3E%3Ccircle cx='34' cy='34' r='6' fill='%23ffd8e6'/%3E%3Ccircle cx='148' cy='42' r='11' fill='%23ff9fc0'/%3E%3Ccircle cx='148' cy='42' r='5' fill='%23ffe4ee'/%3E%3Ccircle cx='142' cy='138' r='12' fill='%23ff97b8'/%3E%3Ccircle cx='142' cy='138' r='5' fill='%23ffe4ee'/%3E%3Cpath d='M22 118 Q52 98 90 108 T158 112' fill='none' stroke='%23ffffff' stroke-width='8' stroke-linecap='round'/%3E%3Cpath d='M30 118 L56 82 L90 72 L124 82 L150 118' fill='none' stroke='%23ffffff' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M90 72 L90 118' stroke='%23ffffff' stroke-width='5' stroke-linecap='round'/%3E%3Cpath d='M54 86 L54 118 M126 86 L126 118' stroke='%23ffffff' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M18 136 Q48 126 78 136 T138 136 T170 136' fill='none' stroke='%23dff6ff' stroke-width='4' stroke-linecap='round' opacity='.9'/%3E%3Cpath d='M20 148 Q44 140 68 148 T116 148 T164 148' fill='none' stroke='%23dff6ff' stroke-width='3' stroke-linecap='round' opacity='.75'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" sizes="192x192" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%23ffd4e5'/%3E%3Cstop offset='52%25' stop-color='%23ffe9f2'/%3E%3Cstop offset='52%25' stop-color='%2389d7f7'/%3E%3Cstop offset='100%25' stop-color='%2357b7e8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='192' height='192' rx='42' fill='url(%23bg)'/%3E%3Ccircle cx='36' cy='36' r='14' fill='%23ff8fb1'/%3E%3Ccircle cx='36' cy='36' r='6' fill='%23ffd8e6'/%3E%3Ccircle cx='158' cy='44' r='12' fill='%23ff9fc0'/%3E%3Ccircle cx='158' cy='44' r='5' fill='%23ffe4ee'/%3E%3Ccircle cx='152' cy='148' r='13' fill='%23ff97b8'/%3E%3Ccircle cx='152' cy='148' r='5' fill='%23ffe4ee'/%3E%3Cpath d='M24 126 Q56 104 96 114 T168 118' fill='none' stroke='%23ffffff' stroke-width='9' stroke-linecap='round'/%3E%3Cpath d='M32 126 L60 86 L96 76 L132 86 L160 126' fill='none' stroke='%23ffffff' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M96 76 L96 126' stroke='%23ffffff' stroke-width='5' stroke-linecap='round'/%3E%3Cpath d='M58 90 L58 126 M134 90 L134 126' stroke='%23ffffff' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M18 146 Q50 136 82 146 T146 146 T178 146' fill='none' stroke='%23dff6ff' stroke-width='4' stroke-linecap='round' opacity='.9'/%3E%3Cpath d='M18 160 Q44 150 70 160 T122 160 T176 160' fill='none' stroke='%23dff6ff' stroke-width='3' stroke-linecap='round' opacity='.75'/%3E%3C/svg%3E">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="春休み2026">
   <style>
     :root {
       --pink: #ff8fb1;
@@ -23,6 +29,7 @@
 
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
+    :target { scroll-margin-top: 92px; }
     body {
       font-size: 18px;
       margin: 0;
@@ -39,9 +46,10 @@
     img { max-width: 100%; display: block; }
 
     .shell {
-      width: min(100%, 980px);
+      width: 100%;
+      max-width: 640px; /* スマホ〜大きめスマホまで自然に広がる */
       margin: 0 auto;
-      padding: 14px 14px 100px;
+      padding: 14px 12px 100px;
     }
 
     .hero {
@@ -212,6 +220,24 @@
 
     .nav a:hover { background: #fff4f8; }
 
+    .back-to-toc {
+      position: fixed;
+      right: 14px;
+      bottom: 14px;
+      z-index: 60;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 800;
+      padding: 10px 14px;
+      border-radius: 999px;
+      color: white;
+      background: linear-gradient(135deg, #ff97b8, #ffb680);
+      box-shadow: 0 10px 22px rgba(255, 147, 181, .24);
+    }
+
     .section {
       margin-top: 18px;
       background: var(--card);
@@ -280,10 +306,7 @@
     }
 
     .day-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 12px;
+      display: block;
       margin-bottom: 12px;
     }
 
@@ -294,6 +317,8 @@
     }
 
     .route-tag {
+      display: inline-block;
+      margin-top: 8px;
       font-size: 12px;
       font-weight: 800;
       padding: 7px 10px;
@@ -305,6 +330,7 @@
       font-size: 17px;
       color: var(--muted);
       margin-top: 3px;
+      font-weight: 400;
     }
 
     .timeline {
@@ -346,6 +372,25 @@
     }
 
     .detail-body {
+      margin-top: 12px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 12px 14px 14px;
+      font-size: 18px;
+    }
+
+    .detail-body h4 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      color: #7d5670;
+    }
+
+    .detail-body-spacer {
+      height: 0;
+    }
+
+    .detail-body-original {
       margin-top: 12px;
       background: white;
       border: 1px solid var(--line);
@@ -423,16 +468,20 @@
     }
 
     @media (min-width: 760px) {
-      .shell { padding: 24px 24px 120px; }
+      .shell { max-width: 720px; padding: 24px 18px 120px; }
       .hero { padding: 28px 24px; }
-      .hero-grid { grid-template-columns: repeat(3, 1fr); }
-      .photo-ribbon { grid-template-columns: repeat(4, 1fr); }
-      .summary-grid { grid-template-columns: repeat(3, 1fr); }
-      .food-grid { grid-template-columns: 1fr 1fr; }
-      .map-grid { grid-template-columns: 1fr 1fr; }
+      .hero-grid { grid-template-columns: 1fr; }
+      .summary-grid { grid-template-columns: 1fr; }
+      .food-grid { grid-template-columns: 1fr; }
+      .map-grid { grid-template-columns: 1fr; }
       .days { grid-template-columns: 1fr; }
-      .day.day-wide { grid-column: 1 / -1; }
-      iframe { min-height: 320px; }
+    }
+      .hero { padding: 28px 20px; }
+      .hero-grid { grid-template-columns: 1fr; }
+      .summary-grid { grid-template-columns: 1fr; }
+      .food-grid { grid-template-columns: 1fr; }
+      .map-grid { grid-template-columns: 1fr; }
+      .days { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -449,47 +498,33 @@
         
       </div>
       <div class="hero-actions">
-        <a class="cta" href="#schedule">旅程を見る</a>
-        <a class="cta-soft" href="#maps">地図リンクを見る</a>
+        <a class="cta" href="#toc">もくじを見る</a>
+        <a class="cta-soft" href="#schedule">日程を見る</a>
       </div>
       </header>
 
     <nav class="nav">
-      <a href="#schedule">🗓 日程</a>
+      <a href="#maps">🗺 地図</a>
       <a href="#links">🔗 公式リンク</a>
       <a href="#foods">🍽 ごはん</a>
-      <a href="#maps">🗺 地図リンク</a>
-      
     </nav>
 
-    <section class="section">
-      <h2>✨ 旅行の見どころ</h2>
+    <section class="section" id="toc">
+      <h2>📖 もくじ<br><span class="day-note">（タップで日程へ）</span></h2>
       <p class="lead"></p>
       <div class="summary-grid">
-        <div class="summary-item">
-          <strong>1日目 広島</strong>
-          路面電車、平和記念公園、縮景園、お好み焼き。
-        </div>
-        <div class="summary-item">
-          <strong>2日目 宮島</strong>
-          厳島神社、表参道、揚げもみじ、宮島泊。
-        </div>
-        <div class="summary-item">
-          <strong>3日目 尾道</strong>
-          呉線の車窓、千光寺、文学のこみち、猫の細道。
-        </div>
-        <div class="summary-item">
-          <strong>4日目 しまなみ海道</strong>
-          瀬戸田、多々羅しまなみ公園、開山公園、亀老山展望公園。
-        </div>
-        <div class="summary-item">
-          <strong>5日目 四国</strong>
-          さぬきうどん、金刀比羅宮、鳴門の渦潮、海鮮ごはん。
-        </div>
-        <div class="summary-item">
-          <strong>6日目 淡路島</strong>
-          うずの丘、道の駅うずしお、パンケーキ、淡路夢舞台 or 花さじき。
-        </div>
+        <div class="summary-item"><a href="#day1" style="text-decoration:none;color:inherit"><strong>1日目 広島</strong>
+          路面電車、平和記念公園、縮景園、お好み焼き。</a></div>
+        <div class="summary-item"><a href="#day2" style="text-decoration:none;color:inherit"><strong>2日目 宮島</strong>
+          厳島神社、表参道、揚げもみじ、宮島泊。</a></div>
+        <div class="summary-item"><a href="#day3" style="text-decoration:none;color:inherit"><strong>3日目 尾道</strong>
+          呉線の車窓、千光寺、文学のこみち、猫の細道。</a></div>
+        <div class="summary-item"><a href="#day4" style="text-decoration:none;color:inherit"><strong>4日目 しまなみ海道</strong>
+          瀬戸田、多々羅しまなみ公園、開山公園、亀老山展望公園。</a></div>
+        <div class="summary-item"><a href="#day5" style="text-decoration:none;color:inherit"><strong>5日目 四国</strong>
+          さぬきうどん、金刀比羅宮、鳴門の渦潮、海鮮ごはん。</a></div>
+        <div class="summary-item"><a href="#day6" style="text-decoration:none;color:inherit"><strong>6日目 淡路島</strong>
+          うずの丘、道の駅うずしお、パンケーキ、淡路夢舞台 or 花さじき。</a></div>
       </div>
     </section>
 
@@ -498,28 +533,28 @@
       <p class="lead"></p>
 
       <div class="days">
-        <article class="day">
+        <article class="day" id="day1">
           <div class="day-header">
             <div>
               <div class="day-title">1日目 3/26(木) 広島</div>
-              <div class="day-note">愛甲石田 → 小田原 → 名古屋 → 広島（新幹線座席も記載）</div>
+              <div class="day-note">愛甲石田 → 小田原 → 名古屋 → 広島</div>
             </div>
             <div class="route-tag">🚋 電車で西へ</div>
           </div>
           <div class="timeline">
             <div class="stop"><div class="time">7:17</div><div><h4>愛甲石田 出発</h4><p>小田急小田原線で小田原へ。</p></div></div>
-            <div class="stop"><div class="time">8:11</div><div><h4>ひかり633号（16号車 8B・8C・8D）</h4><p>小田原 → 名古屋（9:19）</p></div></div>
-            <div class="stop"><div class="time">9:27</div><div><h4>のぞみ13号（16号車 10A・10B・10C）</h4><p>名古屋 → 広島（11:38）</p></div></div>
+            <div class="stop"><div class="time">8:11</div><div><h4>ひかり633号<br><span class="day-note">16号車 8B・8C・8D</span></h4><p>小田原 → 名古屋（9:19着）</p></div></div>
+            <div class="stop"><div class="time">9:27</div><div><h4>のぞみ13号<br><span class="day-note">16号車 10A・10B・10C</span></h4><p>名古屋 → 広島（11:38着）</p></div></div>
             <div class="stop"><div class="time">昼</div><div><h4>🍚 シマカラ食堂</h4><p>ランチ候補。広島散策の前に腹ごしらえ。</p></div></div>
-            <div class="stop"><div class="time">17:30</div><div><h4>🥢 みっちゃん総本店 じぞう通り店</h4><p>夕食。観光を切り上げて向かう目安。</p></div></div>
             <div class="stop"><div class="time">18:00</div><div><h4>🏨 ホテルへ移動</h4><p>タクシーでベッセルホテル広島へ。</p></div></div>
+            <div class="stop"><div class="time">18:30</div><div><h4>🥢 みっちゃん総本店 じぞう通り店</h4><p>夕食。</p></div></div>
           </div>
           <div class="detail-body">
+              <h4>観光・ホテル・リンク</h4>
               <ul class="detail-list">
                 <li>広島電鉄で市内の雰囲気を楽しむ</li>
                 <li>原爆ドーム / 平和記念公園 / 広島平和記念資料館</li>
                 <li>時間があれば縮景園も候補</li>
-                <li>広島観光は夕食に合わせて17:00ごろまでに切り上げる想定</li>
                 <li>宿泊：ベッセルホテル広島 平和大通り（予約済 / 23,940円）</li>
               </ul>
               <div class="links">
@@ -537,7 +572,7 @@
             </div>
         </article>
 
-        <article class="day">
+        <article class="day" id="day2">
           <div class="day-header">
             <div>
               <div class="day-title">2日目 3/27(金) 宮島</div>
@@ -556,6 +591,7 @@
             <div class="stop"><div class="time">18:30</div><div><h4>厳島東門前 菊がわ</h4><p>夕食と宿泊。日没 18:27 前後の景色も楽しみ。</p></div></div>
           </div>
           <div class="detail-body">
+              <h4>観光・グルメ・リンク</h4>
               <ul class="detail-list">
                 <li>宮島、厳島神社、表参道商店街、宮島ロープウェー</li>
                 <li>揚げもみじは紅葉堂でおやつタイム</li>
@@ -575,10 +611,9 @@
                 <a class="link-pill" href="https://kikugawa.ne.jp/" target="_blank" rel="noopener noreferrer">🏨 菊がわ</a>
               </div>
             </div>
-          </details>
         </article>
 
-        <article class="day">
+        <article class="day" id="day3">
           <div class="day-header">
             <div>
               <div class="day-title">3日目 3/28(土) 瀬戸内さざなみ線 → 尾道</div>
@@ -589,15 +624,19 @@
           <div class="timeline">
             <div class="stop"><div class="time">8:00</div><div><h4>🍳 菊がわ 朝食</h4><p>朝食後に宮島を出発する流れ。</p></div></div>
             <div class="stop"><div class="time">9:45</div><div><h4>宮島 出発</h4><p>フェリーで宮島口へ戻る。</p></div></div>
-            <div class="stop"><div class="time">10:19</div><div><h4>JRで海田市へ</h4><p>宮島口 → 海田市。</p></div></div>
-            <div class="stop"><div class="time">11:07</div><div><h4>JR呉線で車窓旅</h4><p>海田市 → 広 → 糸崎 → 尾道。</p></div></div>
+            <div class="stop"><div class="time">10:19</div><div><h4>JR山陽本線（糸崎行）</h4><p>宮島口 10:19 発 → 広島 10:47 着（28分）</p></div></div>
+            <div class="stop"><div class="time">11:00</div><div><h4>JR呉線（広行）</h4><p>広島 11:00 発 → 広 11:46 着（46分）</p></div></div>
+            <div class="stop"><div class="time">11:51</div><div><h4>JR呉線（糸崎行）</h4><p>広 11:51 発 → 糸崎 13:29 着（1時間38分）</p></div></div>
+            <div class="stop"><div class="time">13:32</div><div><h4>JR山陽本線（相生行）</h4><p>糸崎 13:32 発 → 尾道 13:39 着（7分）</p></div></div>
+            <div class="stop"><div class="time">14:00</div><div><h4>尾道本通り商店街を歩く</h4><p>尾道駅 → 本通り商店街 → ロープウェー山麓駅（約30分）</p></div></div>
             <div class="stop"><div class="time">14:30</div><div><h4>🚠 千光寺山ロープウェイ</h4><p>山麓駅 → 山頂駅。</p></div></div>
             <div class="stop"><div class="time">14:45</div><div><h4>尾道さんぽ 開始</h4><p>千光寺公園 → 文学のこみち → 猫の細道 → 艮神社。</p></div></div>
-            <div class="stop"><div class="time">16:45</div><div><h4>渡場通り 出発</h4><p>バスで新尾道駅へ。</p></div></div>
+            <div class="stop"><div class="time">16:45</div><div><h4>渡場通り → 新尾道駅</h4><p>おのみちバス 三美園線（三美園行）<br>渡場通り 16:43 発 → 新尾道駅 16:59 着（約16分）</p></div></div>
             <div class="stop"><div class="time">17:30</div><div><h4>🚗 トヨタレンタカー新尾道店</h4><p>シエンタ受け取り。</p></div></div>
             <div class="stop"><div class="time">夜</div><div><h4>尾道ラーメン or ワーフ</h4><p>壱番館 / 丸ぼし / 尾道ワーフ。</p></div></div>
           </div>
           <div class="detail-body">
+              <h4>観光・レンタカー・リンク</h4>
               <ul class="detail-list">
                 <li>本通り商店街で軽食や買い物も楽しめる</li>
                 <li>17:30 トヨタレンタカー新尾道店でシエンタ受け取り（50,050円）</li>
@@ -616,10 +655,9 @@
                 <a class="link-pill" href="https://onomichi-hotel.jp/" target="_blank" rel="noopener noreferrer">🏨 尾道国際ホテル</a>
               </div>
             </div>
-          </details>
         </article>
 
-        <article class="day">
+        <article class="day" id="day4">
           <div class="day-header">
             <div>
               <div class="day-title">4日目 3/29(日) しまなみ海道</div>
@@ -633,11 +671,12 @@
             <div class="stop"><div class="time">11:00</div><div><h4>瀬戸田・しおまち商店街</h4><p>レモンやジェラート、お散歩。13:30ごろ出発予定。</p></div></div>
             <div class="stop"><div class="time">14:00</div><div><h4>🌉 多々羅しまなみ公園</h4><p>橋の景色を満喫。15:00ごろ出発予定。</p></div></div>
             <div class="stop"><div class="time">15:30</div><div><h4>開山公園</h4><p>桜の候補スポット。16:30ごろ出発予定。</p></div></div>
-            <div class="stop"><div class="time">17:00</div><div><h4>🌅 亀老山展望公園</h4><p>夕方の眺めのクライマックス。18:30ごろ出発予定。</p></div></div>
+            <div class="stop"><div class="time">17:00</div><div><h4>🌅 亀老山展望公園</h4><p>夕方の眺めのクライマックス。日没 18:26。18:30ごろ出発予定。</p></div></div>
             <div class="stop"><div class="time">19:25</div><div><h4>白楽天</h4><p>夕食。20:30ごろ出発予定。</p></div></div>
             <div class="stop"><div class="time">20:30</div><div><h4>今治城</h4><p>ライトアップ見学。20:45ごろ出発予定。</p></div></div>
           </div>
           <div class="detail-body">
+              <h4>観光・おやつ・リンク</h4>
               <ul class="detail-list">
                 <li>昼食：Bonheur / ちどり</li>
                 <li>間食：タコ天 ミナミ / HYAKKOYA / ドルチェ / 島ごころSETODA</li>
@@ -661,10 +700,9 @@
                 <a class="link-pill" href="https://www.imabari-kokusai-hotel.co.jp/" target="_blank" rel="noopener noreferrer">🏨 今治国際ホテル</a>
               </div>
             </div>
-          </details>
         </article>
 
-        <article class="day">
+        <article class="day" id="day5">
           <div class="day-header">
             <div>
               <div class="day-title">5日目 3/30(月) 四国</div>
@@ -683,6 +721,7 @@
             <div class="stop"><div class="time">18:00</div><div><h4>味処あらし</h4><p>鯛、はまち、わかめ、タコの夕食。その後プラザ淡路島へ。</p></div></div>
           </div>
           <div class="detail-body">
+              <h4>観光・夕食・ホテル・リンク</h4>
               <ul class="detail-list">
                 <li>宿泊：プラザ淡路島（予約済 / 32,670円）</li>
                 <li>夕方は大鳴門橋周辺の景色がきれい</li>
@@ -699,13 +738,12 @@
                 <a class="link-pill" href="https://www.plazaawajishima.com/" target="_blank" rel="noopener noreferrer">🏨 プラザ淡路島</a>
               </div>
             </div>
-          </details>
         </article>
 
-        <article class="day day-wide">
+        <article class="day day-wide" id="day6">
           <div class="day-header">
             <div>
-              <div class="day-title">6日目 3/31(火) 淡路島 → 神戸 → 小田原</div>
+              <div class="day-title">6日目 3/31(火) 淡路島</div>
               <div class="day-note">淡路島 → 新神戸 → 名古屋 → 小田原 → 愛甲石田</div>
             </div>
             <div class="route-tag">🌊 最後まで海景色</div>
@@ -714,15 +752,16 @@
             <div class="stop"><div class="time">9:00</div><div><h4>プラザ淡路島 出発</h4><p>朝食後に出発。</p></div></div>
             <div class="stop"><div class="time">9:30</div><div><h4>🧅 うずの丘</h4><p>玉ねぎオブジェや景色、玉ねぎソフトも候補。10:00ごろ出発予定。</p></div></div>
             <div class="stop"><div class="time">10:05</div><div><h4>🍔 道の駅うずしお</h4><p>あわじ島バーガー候補。10:30ごろ出発予定。</p></div></div>
-            <div class="stop"><div class="time">11:30</div><div><h4>幸せのパンケーキ</h4><p>3/27予約済のランチ。13:00ごろ出発予定。</p></div></div>
+            <div class="stop"><div class="time">11:30</div><div><h4>幸せのパンケーキ</h4><p>12:00 淡路島テラス（店内席）予約。ランチ後に13:00ごろ出発予定。</p></div></div>
             <div class="stop"><div class="time">13:30</div><div><h4>🌼 淡路夢舞台 or あわじ花さじき</h4><p>お天気と気分で選ぶ。15:00ごろ出発予定。</p></div></div>
             <div class="stop"><div class="time">15:30</div><div><h4>道の駅あわじ</h4><p>明石海峡大橋を見ながら最後の休憩。16:00ごろ出発予定。</p></div></div>
-            <div class="stop"><div class="time">18:24</div><div><h4>のぞみ104号（5号車 10A・10B・10C）</h4><p>新神戸 → 名古屋（19:27）</p></div></div>
-            <div class="stop"><div class="time">19:31</div><div><h4>ひかり662号（6号車 10A・10B・10C）</h4><p>名古屋 → 小田原（20:38）</p></div></div>
+            <div class="stop"><div class="time">18:24</div><div><h4>のぞみ104号<br><span class="day-note">5号車 10A・10B・10C</span></h4><p>新神戸 → 名古屋（19:27着）</p></div></div>
+            <div class="stop"><div class="time">19:31</div><div><h4>ひかり662号<br><span class="day-note">6号車 10A・10B・10C</span></h4><p>名古屋 → 小田原（20:38着）</p></div></div>
           </div>
           <div class="detail-body">
+              <h4>観光・食べもの・リンク</h4>
               <ul class="detail-list">
-                <li>昼食：幸せのパンケーキ</li>
+                <li>昼食：幸せのパンケーキ（12:00 淡路島テラス店内席 予約）</li>
                 <li>間食：玉ねぎソフト / あわじ島バーガー</li>
                 <li>夕食候補：駅弁 or 新神戸</li>
                 <li>花さじきは季節の花、夢舞台は建築と庭園が魅力</li>
@@ -740,7 +779,6 @@
                 <a class="link-pill" href="https://michi-awaji.co.jp/index.html" target="_blank" rel="noopener noreferrer">🌉 道の駅あわじ</a>
               </div>
             </div>
-          </details>
         </article>
       </div>
     </section>
@@ -824,8 +862,10 @@
 
     
   </div>
+  <a class="back-to-toc" href="#toc">⬆ もくじ</a>
 </body>
 </html>
+
 
 
 
